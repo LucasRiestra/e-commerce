@@ -1,0 +1,193 @@
+html {
+    scroll-behavior: smooth;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1.7s; 
+  }
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.HomeFront-Page {
+    height: 120vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695506975/6A775F5B-FCAB-4FEE-B602-B4CBE63A5884_oukgph.webp");
+    background-repeat: no-repeat; 
+    background-size:  100%;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10vh;
+    width: 100%; 
+}
+
+
+.Home-Title {
+    font-size: 35vh;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Impact;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 90%;
+}
+
+.Home-Subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Impact;
+    font-size: 7vh;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1vh solid orange;
+    background: rgba(255, 255, 255, 0.00);
+    align-items: center;
+    justify-content: center;
+    margin-left: 30vh;
+    margin-right: 35vh;
+
+}
+
+.HomeMen-Page {
+    height: 120vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695506606/MenShop_tdrrke.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10vh;
+    width: 100%; 
+}
+
+.Men-Title p {
+    font-size: 5vh;
+    color: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    font-family: Impact;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 90%;
+    align-items: center;
+    padding-top: 18vh;
+}
+
+.Men-Title p:hover {
+    color: #FFF;
+  transform: scale(1.05); 
+  transition: transform 0.5s;
+}
+
+.Buttons {
+    display: flex;
+    width: 338px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: #F90;
+    color: #FFF;
+    text-align: center;
+    font-family: Impact;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    align-self: center;
+    margin-left: 80vh;
+    border: none;
+}
+
+.Buttons a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.Buttons a:focus, .Buttons a:active {
+    outline: none; 
+    color: inherit; 
+}
+
+
+.HomeWoman-Page {
+    height: 120vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695622813/jamakassi-wejxKZ-9IZg-unsplash_wlk8y4.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10vh;
+    width: 100%; 
+}
+
+
+.Woman-Title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    font-size: 5vh;
+    color: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    font-family: Impact;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 10vh
+}
+
+.WomanFirtsTitle {
+    opacity: 90%;
+    text-align: left;
+    margin-left: 10vh;
+}
+
+.WomanSecondTitle {
+    opacity: 90%;
+    text-align: right;
+    margin-right: 10vh;
+}
+
+.WomanFirtsTitle:hover,
+.WomanSecondTitle:hover {
+    color: #FFF;
+  transform: scale(1.1); 
+  transition: transform 0.5s;
+}
+
+
+.HomeAccesories-Page {
+    height: 90vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695624579/Accesories_rge1h3.avif");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10vh;
+    width: 100%; 
+}
+
+.Accesories-Title {
+    font-size: 12vh;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Impact;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 90%;
+}
+
+.Accesories-Title p:hover {
+    color: #FFF;
+  transform: scale(1.05); 
+  transition: transform 0.5s;
+}

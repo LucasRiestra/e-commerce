@@ -1,0 +1,36 @@
+.modal-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr; 
+    align-items: center;
+  }
+  
+  .modal-grid img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .modal-grid .product-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+  }
+  
+  .modal-grid .product-details strong {
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtotal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Buttons-modal {
+    font-size: 2vh;
+    display: flex;
+    border-radius: 10px;
+    background: #F90;
+    color: #000000;
+    font-family: Impact;
+    border: none;
+    padding: 0 2vh;
+}

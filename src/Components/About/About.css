@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1.7s; 
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.About-Page {
+    height: 120vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695633304/About_qgbvie.avif");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10vh;
+    width: 100%; 
+}
+
+
+.About-Title {
+    font-size: 20vh;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Impact;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 90%;
+
+}
+
+.About-Subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial Unicode MS;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 2px solid #F90;
+    background: rgba(255, 255, 255, 0.00);
+    align-items: center;
+    justify-content: center;
+    margin-left: 30vh;
+    margin-right: 35vh;
+    padding: 2vh;
+}
