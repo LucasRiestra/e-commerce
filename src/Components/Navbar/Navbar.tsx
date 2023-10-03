@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaUserAlt, FaShoppingCart } from 'react-icons/fa';
 
 
@@ -10,17 +10,34 @@ const Navbar: React.FC = () => {
       behavior: 'smooth'
     });
   };
+
+  const [searchWord, setSearchWord] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchWord(event.target.value);
+  };
+
+  const handleSearch = () => {
+    navigate(`/search/${searchWord}`);
+    setSearchWord('');
+  };
+  
   return (
     <header className='header'>
       <h1>La CaieVintage</h1>
       <nav>
         <ul>
-        <input
-          type="text"
-          placeholder="serch product..."
-          className='serch-input'
-        />
-          <button type="submit" className='serch-btn'>Go</button>
+          <input
+            type="text"
+            placeholder="search product..."
+            className='search-input'
+            onChange={handleSearchChange}
+            value={searchWord}
+          />
+          <button type="button" className='search-btn' onClick={(handleSearch)}>
+            Go
+          </button>
           <li onClick={scrollToTop}><Link to="/">Home</Link></li>
           <li onClick={scrollToTop}><Link to="/MenShop">Men Shop</Link></li>
           <li onClick={scrollToTop}><Link to="/WomanShop">Woman Shop</Link></li>

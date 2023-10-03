@@ -1,12 +1,13 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import WomanProductsComponent from '../Components/products/Woman';
-import MenProductsComponent from '../Components/products/Men';
-import AccessoriesComponent from '../Components/products/Accessories';
+import { Routes, Route, } from 'react-router-dom';
+import WomanProductsComponent from '../Components/Products/Woman';
+import MenProductsComponent from '../Components/Products/Men';
+import AccessoriesComponent from '../Components/Products/Accessories';
 import HomePage from '../Components/Home/Home';
 import About from '../Components/About/About';
 import Cart from '../Components/Cart/Cart';
 import Login from '../Components/Login/Login';
+import Search from '../Components/Navbar/Search';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/About" element={<About />} />
         <Route path='/Login' element={<Login/>} />
         <Route path='/Cart' element={<Cart />} />
+        <Route path='/search/:searchWord' element={<Search />} />
       </Routes>
   );
 };

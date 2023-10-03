@@ -78,14 +78,14 @@ html {
   color: white;
 }
 
-.serch-input{
+.search-input{
   background-color: var(--serch-color);
   border-radius: 5px;
   border: none;
   outline: none;
 }
 
-.serch-btn{
+.search-btn{
   background-color:var(--buttons-color);
   border: none;
   margin-left: 0.5vh;
