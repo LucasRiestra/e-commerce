@@ -6,6 +6,7 @@ export type Product = {
   price: number; 
   quantity: number;
   image: string;
+  description: string
 }
 
 export type CartContextProps = {

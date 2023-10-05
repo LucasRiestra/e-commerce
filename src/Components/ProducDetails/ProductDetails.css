@@ -1,0 +1,69 @@
+.detail-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    padding-top: 5vh;
+  }
+
+.detail-img{
+    width: 85%;
+    height: 90%;
+    
+}
+
+.column2{
+    text-align: left;
+    justify-content: center;
+    padding: 10vh;
+    align-items: center;
+    margin-right: 3rem;
+}
+  
+.detail-title{
+    gap: 1vh;
+    font-size: 5vh;
+    justify-items: left; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    padding-bottom: 1vh;
+}
+
+.detail-add-button{
+    padding-left: 1vh;
+    margin-left: 20%;
+    border: none;
+    background-color: var(--buttons-color);
+    color: #333;
+    font-size: 4vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5vh;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 4vh
+}
+
+.detail-back-button{
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    background-color: var(--buttons-color);
+    color: #333;
+    font-size: 4vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5vh;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 4vh;
+}
+
+.similar-products-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5vh;
+}
+
+
+.img-similar{
+    width: 24vh;
+    height: 30vh;
+}

@@ -8,6 +8,10 @@ import About from '../Components/About/About';
 import Cart from '../Components/Cart/Cart';
 import Login from '../Components/Login/Login';
 import Search from '../Components/Navbar/Search';
+import ProductDetailMen from '../Components/ProducDetails/ProductDetailsMen';
+import ProductDetailWoman from '../Components/ProducDetails/ProducDetailsWoman';
+import ProductDetailAccesories from '../Components/ProducDetails/ProductDetailsAccesories';
+
 
 const AppRoutes: React.FC = () => {
   return (
@@ -20,6 +24,11 @@ const AppRoutes: React.FC = () => {
         <Route path='/Login' element={<Login/>} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/search/:searchWord' element={<Search />} />
+        <Route path='/detailMen/:productId' element={<ProductDetailMen />} />
+        <Route path='/detailWoman/:productId' element={<ProductDetailWoman />} />
+        <Route path='/detailAccesories/:productId' element={<ProductDetailAccesories />} />
+
+
       </Routes>
   );
 };

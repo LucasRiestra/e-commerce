@@ -114,7 +114,7 @@
 }
 
 .Buttons-modal-address{
-  font-size: 2vh;
+  font-size: 3vh;
   display: flex;
   border-radius: 10px;
   background: #F90;
@@ -125,6 +125,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 1vh;
 }
 
 .input{
@@ -152,6 +153,20 @@ div.modal-footer{
 
 
 button.Buttons-modal-pay{
+  font-size: 3vh;
+    display: flex;
+    border-radius: 10px;
+    background: #F90;
+    color: #000000;
+    font-family: Impact;
+    border: none;
+    padding: 0 2vh;
+    margin-right: 1vh;
+    text-align: center;
+    justify-content: center;
+}
+
+button.Buttons-modal-finalize{
   font-size: 3vh;
     display: flex;
     border-radius: 10px;
