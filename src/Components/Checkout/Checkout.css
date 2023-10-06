@@ -113,10 +113,10 @@
   justify-content: left;
 }
 
-.Buttons-modal-address{
+button.Buttons-modal-address{
   font-size: 3vh;
   display: flex;
-  border-radius: 10px;
+  border-radius: 30px;
   background: #F90;
   color: #000000;
   font-family: Impact;
@@ -125,7 +125,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1vh;
+  gap: 2vh;
+  margin-right: 2vh;
 }
 
 .input{

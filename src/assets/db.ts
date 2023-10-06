@@ -33,7 +33,7 @@ export const MenProductsArray : MenProducts[] = [{
     id: 0,
     name: "Estopa Black t-shirt S",
     price: 10.00,
-    image: "https://res.cloudinary.com/dtqgzojs3/image/upload/v1695135953/DSC06755-800x1067_tlyebk.jpg",
+    image: "https://res.cloudinary.com/dtqgzojs3/image/upload/v1695137057/DSC06755-800x1067_hxfwi6.jpg",
     category: "MenShop",
     description: "Vintage Clothing: Step into the past with our curated collection, where each piece whispers tales of style and grace from a bygone era. Embrace the nostalgia and timeless allure of vintage fashion.",
     quantity: 1

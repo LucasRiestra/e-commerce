@@ -30,13 +30,12 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ showModal, handleClose, c
 };
 
   const [showAddressModal, setShowAddressModal] = useState(false); 
+  const [isChecked, setIsChecked] = useState(false);
 
 const handleAddressModal = () => {
   setShowAddressModal(!showAddressModal); 
   setIsChecked(true);
 };
-
-const [isChecked, setIsChecked] = useState(false);
 
   return (
     <Modal show={showModal} onHide={handleClose} size="lg" dialogClassName="modal-lg">
@@ -80,7 +79,7 @@ const [isChecked, setIsChecked] = useState(false);
                 <span className="in-store-span"><input className='input' type="checkbox" /></span>
               </div>
               <div className='modal-address'>
-               <button className='Buttons-modal-address' onClick={handleAddressModal}>Billing Details</button><input type="checkbox" checked={isChecked} readOnly />
+               <button className='Buttons-modal-address' onClick={handleAddressModal}>shipping information</button><input type="checkbox" checked={isChecked} />
                <AddressModal show={showAddressModal} handleClose={handleAddressModal}/>
               </div>
               <hr />
@@ -98,7 +97,6 @@ const [isChecked, setIsChecked] = useState(false);
       </Modal.Body>
       <Modal.Footer>
       <button className="Buttons-modal-finalize" >Finalize Purchase</button>
-       <h3 className='thanks'></h3>
       </Modal.Footer>
     </Modal>
   );

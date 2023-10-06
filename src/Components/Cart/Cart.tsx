@@ -14,32 +14,34 @@ const Cart: FC = () => {
       ...prevQuantities,
       [productId]: (prevQuantities[productId] || 1) + 1,
     }));
-    
+  
     if (cartContext) {
       cartContext.addToCart({
         id: productId,
-        name: "", 
-        price: (productPrice),
+        name: "",
+        price: productPrice,
         quantity: 1,
         image: "",
+        description: ""
       });
     }
   };
-
+  
   const handleDecrement = (productId: number, productPrice: number) => {
     if (productQuantities[productId] && productQuantities[productId] > 1) {
       setProductQuantities((prevQuantities) => ({
         ...prevQuantities,
         [productId]: prevQuantities[productId] - 1,
       }));
-
+  
       if (cartContext) {
         cartContext.addToCart({
           id: productId,
-          name: "", 
-          price: (productPrice),
+          name: "",
+          price: productPrice,
           quantity: -1,
-          image: "", 
+          image: "",
+          description: ""
         });
       }
     }

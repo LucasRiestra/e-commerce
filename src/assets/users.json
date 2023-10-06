@@ -1,0 +1,57 @@
+[
+    {
+        "id":0,
+        "FirstName":"Jose Antonio",
+        "LastName":"Mattiato",
+        "username":"Jose",
+        "Email":"gmattiato0@prnewswire.com",
+        "password": "123456",
+        "Phone":"115-214-0187",
+        "PostalCode":"95-001",
+        "Street":"8 Mandrake Lane",
+        "City":"Biała",
+        "Country":"Poland"
+    },
+
+    {
+        "id":1,
+        "FirstName":"Juan Manuel",
+        "LastName":"Bangle",
+        "username":"Juan",
+        "password": "123456",
+        "Email":"sbangle1@booking.com",
+        "Phone":"940-697-8441",
+        "PostalCode":null,
+        "Street":"28 Pepper Wood Trail",
+        "City":"Cikalong",
+        "Country":"Indonesia"
+    },
+
+    {
+        "id":2,
+        "FirstName":"Maria del mar",
+        "LastName":"Eginton",
+        "username":"Maria",
+        "password": "123456",
+        "Email":"teginton2@globo.com",
+        "Phone":"981-599-9950",
+        "PostalCode":null,
+        "Street":"9 Duke Road",
+        "City":"Sangatta",
+        "Country":"Indonesia"
+    },
+        
+
+    {   "id":3,
+        "FirstName":"Ramona Josefina",
+        "LastName":"Bachman",
+        "username":"Ramona",
+        "password": "123456",
+        "Email":"rbachman3@webeden.co.uk",
+        "Phone":"416-978-9504",
+        "PostalCode":"33130",
+        "Street":"3882 Gina Drive",
+        "City":"Nam Kliang",
+        "Country":"Thailand"
+     }
+]

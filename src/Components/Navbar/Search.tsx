@@ -3,7 +3,6 @@ import { useCart } from "../../Hooks/useCart";
 import { MenProductsArray, WomanProductsArray, AccessoriesArray } from '../../assets/db';
 import { Link, useParams } from 'react-router-dom';
 
-
 const Search: React.FC = () => {
   const { addToCart } = useCart();
   const { searchWord } = useParams<{ searchWord?: string }>();
@@ -23,6 +22,7 @@ const Search: React.FC = () => {
       <Link to={`/detailMen/${product.id}`}>
       <img src={product.image} alt={product.name} />
       </Link>
+      
       <h1 className='product-title'>{product.name}</h1>
       <h2 className='product-price'>{product.price}€</h2>
       <button className="add-button" onClick={() => addToCart(product)}>

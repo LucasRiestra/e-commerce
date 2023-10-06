@@ -54,6 +54,8 @@ export const AddressModal: React.FC<AddressModalProps> = ({ show, handleClose })
     localStorage.setItem('formData', JSON.stringify(formData));
   }, [formData]);
 
+  console.log(formData)
+
   return (
     <div className='data-grid'>
       <Modal show={show} onHide={handleClose} >

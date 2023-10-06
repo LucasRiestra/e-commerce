@@ -9,6 +9,7 @@ import "./Components/ProducDetails/ProductDetails.css"
 import "./index.css"
 import { CartProvider } from './Context/CartContex';
 import Footer from './Components/Footer/Footer';
+import Users from './Components/Login/Users';
 
 const App: FC = () => {
   return (
@@ -16,8 +17,9 @@ const App: FC = () => {
     <CartProvider>
     <Navbar />
     <AppRoutes />
-    </CartProvider>
     <Footer />
+    <Users />
+    </CartProvider>
     </>
   );
 };
