@@ -2,6 +2,7 @@ import { FC, useContext, useState } from "react";
 import { CartContext, CartContextProps } from "../../Context/CartContex";
 import "./Cart.css";
 import CheckoutModal from "../Checkout/Checkout";
+import toast, {Toaster} from 'react-hot-toast';
 
 const Cart: FC = () => {
   const cartContext = useContext<CartContextProps | undefined>(CartContext);
@@ -69,6 +70,13 @@ const Cart: FC = () => {
     setShowCheckoutModal(false);
   };
 
+  const handleCloseAndShowToast = () => {
+    toast.success('Your package is coming!', {
+      duration: 3000, // Duración de 3 segundos
+    });
+  };
+
+  
 
   return (
     <>
@@ -101,8 +109,12 @@ const Cart: FC = () => {
         <button className="checkout-btn" onClick={handleOpenCheckoutModal}>Go CheckOut</button>
         <button className="clear-cart-btn" onClick={handleClearCart}>Clear Cart</button>
         </div>
-        <CheckoutModal showModal={showCheckoutModal} handleClose={() => handleCloseCheckoutModal()} cartProducts={cartContext?.cart || []} productQuantities={productQuantities}/>
+        <CheckoutModal showModal={showCheckoutModal} handleClose={() => {
+        handleCloseCheckoutModal();
+        handleCloseAndShowToast(); 
+      }} cartProducts={cartContext?.cart || []} productQuantities={productQuantities} />
       </aside>
+      <Toaster />
     </>
   );
 };

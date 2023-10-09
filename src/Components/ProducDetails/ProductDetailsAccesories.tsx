@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { AccessoriesArray } from '../../assets/db';
 import { useCart } from '../../Hooks/useCart';
 import { Link, useParams } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
 
 export interface Product {
   id: number;
@@ -50,6 +51,8 @@ const ProductDetailAccesories = () => {
   if (!product) {
     return <div>Product not found</div>;
   }
+  
+  const notify = () => toast("added to cart");
 
   return (
     <div className="detail-grid">
@@ -73,7 +76,7 @@ const ProductDetailAccesories = () => {
           ))}
           </div>
       </div>
-      <button className="detail-add-button" onClick={() => addToCart(product)}>
+      <button className="detail-add-button" onClick={() => { notify(); addToCart(product); }}>
         Add to cart
       </button>
       <Link to="/WomanShop">
@@ -81,6 +84,7 @@ const ProductDetailAccesories = () => {
         Back to store
       </button>
       </Link>
+      <Toaster />
     </div>
   );
 };

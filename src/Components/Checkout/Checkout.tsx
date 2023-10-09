@@ -4,7 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Product } from '../../Context/CartContex';
 import "./Checkout.css";
 import { FaGooglePay, FaPaypal } from 'react-icons/fa';
-import { AddressModal } from './AddressModal';
+import { AddressModal, FormInputs } from './AddressModal';
+import toast, {Toaster} from 'react-hot-toast';
+
+
 
 
 interface CheckoutModalProps {
@@ -25,21 +28,77 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ showModal, handleClose, c
   
   const [shippingSelected, setShippingSelected] = useState(false);
 
-  const handleShippingSelection = () => {
-  setShippingSelected(!shippingSelected);
-};
+  const handleShippingSelection = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setShippingSelected(e.target.checked);
+  };
 
   const [showAddressModal, setShowAddressModal] = useState(false); 
   const [isChecked, setIsChecked] = useState(false);
 
-const handleAddressModal = () => {
-  setShowAddressModal(!showAddressModal); 
-  setIsChecked(true);
+  const [addressFormData, setAddressFormData] = useState<FormInputs>({
+    Street: '',
+    City: '',
+    Country: '',
+    PostalCode: 0,
+    FirstName: '',
+    LastName: '',
+    Email: '',
+    Phone: 0,
+  });
+
+  const handleAddressModal = () => {
+    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser') || '{}');
+  
+    if (loggedInUser) {
+      setAddressFormData({
+        ...addressFormData,
+        Street: loggedInUser.Street || '',
+        City: loggedInUser.City || '',
+        Country: loggedInUser.Country || '',
+        PostalCode: loggedInUser.PostalCode || 0,
+        FirstName: loggedInUser.FirstName || '',
+        LastName: loggedInUser.LastName || '',
+        Email: loggedInUser.Email || '',
+        Phone: loggedInUser.Phone || 0,
+      });
+    }
+  
+    setShowAddressModal(!showAddressModal);
+    setIsChecked(true);
+  };
+
+  
+const isAddressDataValid = (formData: FormInputs): boolean => {
+  return (
+    formData.Street !== '' &&
+    formData.City !== '' &&
+    formData.Country !== '' &&
+    formData.PostalCode !== 0 &&
+    formData.FirstName !== '' &&
+    formData.LastName !== '' &&
+    formData.Email !== '' &&
+    formData.Phone !== 0
+  );
 };
 
+const handleFinalizePurchase = () => {
+  if (!isAddressDataValid(addressFormData)) {
+    toast.error('Shipping information is missing or incomplete', {
+      duration: 3000,
+    });
+  } else {
+    handleClose();
+  }
+};
+
+const handleCheckboxChange = () => {
+  setShippingSelected(prevShippingSelected => !prevShippingSelected);
+};
+
+
   return (
-    <Modal show={showModal} onHide={handleClose} size="lg" dialogClassName="modal-lg">
-      <Modal.Header closeButton>
+    <Modal show={showModal}  size="lg" dialogClassName="modal-lg">
+      <Modal.Header >
         <Modal.Title>Checkout</Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -69,8 +128,9 @@ const handleAddressModal = () => {
                 <input 
                 className='input' 
                 type="checkbox"
-                onClick={handleShippingSelection}
+                onChange={handleShippingSelection}
                 checked={shippingSelected}
+
                 />
                 </span>
             </div>
@@ -79,8 +139,11 @@ const handleAddressModal = () => {
                 <span className="in-store-span"><input className='input' type="checkbox" /></span>
               </div>
               <div className='modal-address'>
-               <button className='Buttons-modal-address' onClick={handleAddressModal}>shipping information</button><input type="checkbox" checked={isChecked} />
-               <AddressModal show={showAddressModal} handleClose={handleAddressModal}/>
+               <button className='Buttons-modal-address' onClick={handleAddressModal} >shipping information</button><input type="checkbox" checked={isChecked} onChange={handleCheckboxChange}/>
+               <AddressModal show={showAddressModal}
+                handleClose={handleAddressModal}
+                addressFormData={addressFormData}  
+                setAddressFormData={setAddressFormData}   />
               </div>
               <hr />
               <div className="subtotal">
@@ -96,8 +159,9 @@ const handleAddressModal = () => {
         </Container>
       </Modal.Body>
       <Modal.Footer>
-      <button className="Buttons-modal-finalize" >Finalize Purchase</button>
+      <button className="Buttons-modal-finalize" onClick={handleFinalizePurchase} >Finalize Purchase</button>
       </Modal.Footer>
+      <Toaster />
     </Modal>
   );
 };
