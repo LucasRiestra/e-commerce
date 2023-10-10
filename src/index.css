@@ -1,3 +1,6 @@
+
+
+
 html {
   scroll-behavior: smooth;
   transition-timing-function: ease-in-out;
@@ -48,7 +51,6 @@ html {
  font-size: 3.5vh;
  margin-left: 10vh;
  color: #d5d5d5;
-
 }
 
 .header h1:hover{
@@ -175,7 +177,6 @@ footer {
     height: 2vh;
   }
 
-  /* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 0.6rem;
 }
@@ -189,3 +190,70 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--buttons-color)
 }
+
+.menu-toggle {
+  display: none; 
+}
+
+
+
+@media (max-width: 600px) and (max-height: 844px) {
+  .body{
+    width: 390px;
+    height: auto;
+  }
+
+  .header {
+    display: block;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    width: 390px;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .header h1{
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-links.open {
+    display: block;
+  }
+  
+  .nav-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .nav-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-links ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links ul li a:hover {
+    color: #FF9900;
+  }
+
+  footer {
+    background-color: rgb(40, 40, 40);
+    z-index: 1;
+    width: 100px;
+    
+  }
+
+  .footer-content{
+    width: 100px;
+  }
+  
+}
+    

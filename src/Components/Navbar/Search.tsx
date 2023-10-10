@@ -24,7 +24,7 @@ const Search: React.FC = () => {
     } else if (product.category === 'WomanShop') {
       detailLink = `/detailWoman/${product.id}`;
     } else if (product.category === 'Accersories') {
-      detailLink = `/detailAccessories/${product.id}`;
+      detailLink = `/detailAccesories/${product.id}`;
     } else {
       detailLink = '#';
     }

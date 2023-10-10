@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaUserAlt, FaShoppingCart } from 'react-icons/fa';
 
-
 const Navbar: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -22,7 +21,9 @@ const Navbar: React.FC = () => {
     navigate(`/search/${searchWord}`);
     setSearchWord('');
   };
-  
+
+
+
   return (
     <header className='header'>
       <h1>La CaieVintage</h1>
@@ -35,7 +36,7 @@ const Navbar: React.FC = () => {
             onChange={handleSearchChange}
             value={searchWord}
           />
-          <button type="button" className='search-btn' onClick={(handleSearch)}>
+          <button type="button" className='search-btn' onClick={handleSearch}>
             Go
           </button>
           <li onClick={scrollToTop}><Link to="/">Home</Link></li>

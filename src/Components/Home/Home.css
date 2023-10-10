@@ -1,7 +1,8 @@
+
+
 html {
     scroll-behavior: smooth;
     transition-timing-function: ease-in-out;
-    transition-duration: 1.7s; 
   }
 
 body{
@@ -18,11 +19,12 @@ body{
     background-position: center;
     padding-top: 10vh;
     width: 100%; 
+   
 }
 
 
 .Home-Title {
-    font-size: 35vh;
+    font-size: 30vh;
     color: rgba(255, 255, 255, 0.90);
     font-family: Impact;
     font-style: normal;
@@ -51,23 +53,35 @@ body{
 
 }
 
+@keyframes fadeInOut {
+    0% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
+
+
 .HomeMen-Page {
     height: 120vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695506606/MenShop_tdrrke.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     padding-top: 10vh;
     width: 100%; 
+    animation: fadeInOut 5s ease-in-out infinite; 
 }
 
 .Men-Title p {
-    font-size: 5vh;
     color: rgba(255, 255, 255, 0.90);
     text-align: center;
     font-family: Impact;
-    font-size: 96px;
+    font-size: 12vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -94,7 +108,7 @@ body{
     color: #FFF;
     text-align: center;
     font-family: Impact;
-    font-size: 40px;
+    font-size: 5vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -117,14 +131,15 @@ body{
 
 .HomeWoman-Page {
     height: 120vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695622813/jamakassi-wejxKZ-9IZg-unsplash_wlk8y4.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     padding-top: 10vh;
     width: 100%; 
+    animation: fadeInOut 5s ease-in-out infinite; 
 }
+
 
 
 .Woman-Title {
@@ -135,7 +150,7 @@ body{
     color: rgba(255, 255, 255, 0.90);
     text-align: center;
     font-family: Impact;
-    font-size: 86px;
+    font-size: 12vh;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
@@ -165,13 +180,13 @@ body{
 
 .HomeAccesories-Page {
     height: 90vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.499) 100%), url("https://res.cloudinary.com/dtqgzojs3/image/upload/v1695624579/Accesories_rge1h3.avif");
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     padding-top: 10vh;
     width: 100%; 
+    animation: fadeInOut 5s ease-in-out infinite; 
 }
 
 .Accesories-Title {
@@ -190,4 +205,48 @@ body{
     color: #FFF;
   transform: scale(1.05); 
   transition: transform 0.5s;
+}
+
+@media (max-width: 600px) and (max-height: 844px) {
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .HomeFront-Page {
+        height: 100%; 
+        padding-top: 5vh; 
+    }
+
+    .Home-Title {
+        font-size: 10vh; 
+    }
+
+    .HomeSubtitle {
+        font-size: 3vh; 
+        margin: 0 2vh;
+    }
+
+    .Buttons {
+        display: flex;
+        width: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        background: #F90;
+        color: #FFF;
+        text-align: center;
+        font-family: Impact;
+        font-size: 5vh;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        align-self: center;
+        margin-left: 25vh;
+        border: none;
+    }
+
+    /* Puedes seguir ajustando otros estilos según sea necesario para dispositivos móviles */
+
 }

@@ -87,9 +87,13 @@ const handleFinalizePurchase = () => {
       duration: 3000,
     });
   } else {
-    handleClose();
+    handleClose(); 
+    toast.success('Your package is on its way!', {
+      duration: 3000,
+    });
   }
 };
+
 
 const handleCheckboxChange = () => {
   setShippingSelected(prevShippingSelected => !prevShippingSelected);
@@ -98,7 +102,7 @@ const handleCheckboxChange = () => {
 
   return (
     <Modal show={showModal}  size="lg" dialogClassName="modal-lg">
-      <Modal.Header >
+      <Modal.Header closeButton onClick={handleClose} >
         <Modal.Title>Checkout</Modal.Title>
       </Modal.Header>
       <Modal.Body>
