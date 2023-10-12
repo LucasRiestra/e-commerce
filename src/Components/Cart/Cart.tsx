@@ -72,7 +72,7 @@ const Cart: FC = () => {
 
   const handleCloseAndShowToast = () => {
     toast.success('Your package is coming!', {
-      duration: 3000, // Duración de 3 segundos
+      duration: 3000, 
     });
   };
 

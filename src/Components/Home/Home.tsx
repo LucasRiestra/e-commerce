@@ -101,10 +101,6 @@ const HomePage = () => {
                 <button className="Buttons" onClick={scrollToTop}><Link to="/Accessories">See more details</Link></button>
             </div>
         </div>
-        <footer className="footer">
-
-
-        </footer>
         </div>
 
     )

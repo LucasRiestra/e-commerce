@@ -81,6 +81,7 @@ const isAddressDataValid = (formData: FormInputs): boolean => {
   );
 };
 
+
 const handleFinalizePurchase = () => {
   if (!isAddressDataValid(addressFormData)) {
     toast.error('Shipping information is missing or incomplete', {
@@ -88,9 +89,7 @@ const handleFinalizePurchase = () => {
     });
   } else {
     handleClose(); 
-    toast.success('Your package is on its way!', {
-      duration: 3000,
-    });
+    
   }
 };
 

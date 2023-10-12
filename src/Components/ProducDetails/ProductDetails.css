@@ -67,3 +67,59 @@
     width: 24vh;
     height: 30vh;
 }
+
+
+/*Responsive*/
+
+@media (max-width: 600px) and (max-height: 845px) {
+    .detail-grid {
+      grid-template-columns: 100%; 
+    }
+  
+    .detail-img {
+      width: 69%; 
+      height: auto;
+    }
+  
+    .column2 {
+      padding: 2vh; 
+      margin-right: 0;
+    }
+  
+    .detail-title {
+      font-size: 3vh;
+    }
+
+    .detail-description{
+      font-size: 1.5vh;
+    }
+  
+    .detail-add-button,
+    .detail-back-button {
+      margin: 0 auto;
+      width: 80%; 
+    }
+  
+    .similar-products-grid {
+      grid-template-columns: repeat(3, 1fr); 
+      padding-top: 2vh; 
+    }
+  
+    .img-similar {
+      width: 100%; 
+      height: auto; 
+    }
+  
+    .similar-product-title {
+      font-size: 2vh;
+    }
+
+    .detail-add-button{
+        margin-bottom: 2vh;
+    }
+    .detail-back-button{
+        margin-bottom: 2vh;
+    }
+    
+  }
+  
