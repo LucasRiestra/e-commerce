@@ -203,7 +203,7 @@ body{
 
 /*Responsive*/
 
-@media (max-width: 600px) and (max-height: 844px) {
+@media (max-width: 600px) and (max-height: 845px) {
     html {
         scroll-behavior: smooth;
         transition-timing-function: ease-in-out;
@@ -227,7 +227,7 @@ body{
     
     
     .Home-Title {
-        font-size: 15vh;
+        font-size: 5vh;
         color: rgba(255, 255, 255, 0.90);
         font-family: Impact;
         font-style: normal;
@@ -408,7 +408,7 @@ body{
 }
 
 
-@media (max-width: 390px) and (max-height: 844px) {
+@media (max-width: 600px) and (max-height: 900px) {
     html {
         scroll-behavior: smooth;
         transition-timing-function: ease-in-out;

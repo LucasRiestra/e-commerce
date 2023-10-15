@@ -200,7 +200,7 @@ footer {
 
 
 
-@media (max-width: 390px) and (max-height: 844px) {
+@media (max-width: 600px) and (max-height: 850px) {
   html {
     scroll-behavior: smooth;
     transition-timing-function: ease-in-out;
