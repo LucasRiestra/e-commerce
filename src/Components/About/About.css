@@ -54,7 +54,7 @@ body{
 
 /*Responsive*/
 
-@media (max-width: 600px) and (max-height: 845px) {
+@media (max-width: 600px) and (max-height: 900px) {
     .About-Title{
         font-size: 15vh;
     }

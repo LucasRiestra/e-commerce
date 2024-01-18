@@ -191,3 +191,80 @@ html {
   transform: scale(1.05); 
   transition: transform 0.5s;
 }
+
+@media screen and (max-width: 600px) and (max-height: 900px) {
+    .HomeFront-Page {
+        height: 450px;
+        width: 400 !important;
+    }
+    
+    .Home-Title {
+        font-size: 12vh;
+        padding-top:2vh;
+    }
+    
+    .Home-Subtitle {
+        font-size: 3vh;
+        border: 0.1vh solid orange;
+    }
+    
+    .Buttons {
+        display: flex;
+        width: 12vh;
+        height: 6vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 2vh;
+        margin-left: 18vh;
+    }
+
+    .HomeMen-Page{
+        height: 450px;
+        padding-top: 2vh;
+    }
+
+    .Men-Title p {
+        font-size: 5vh;
+        padding-top: 1vh;
+    }
+
+    .HomeWoman-Page{
+        height: 450px;
+        width: 400 !important;
+        padding-top: 1vh;
+    }
+
+    .Woman-Title{
+        gap: 2vh; 
+        padding-top: 5vh;
+    }
+
+    .WomanFirtsTitle{
+        font-size: 4vh;
+        padding-top: 1px;
+        margin-left: 1vh;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .WomanSecondTitle{
+        font-size: 4vh;
+        padding-top: 1px;
+        margin-right: 1vh;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .HomeAccesories-Page {
+        height: 450px;
+        width: 400 !important;
+        padding-top: 1vh;
+    }
+
+    .Accesories-Title {
+        margin-top: 15vh;
+        font-size: 4vh;
+        padding-top: 1vh;
+    }
+}

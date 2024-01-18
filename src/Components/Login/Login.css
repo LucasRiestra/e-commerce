@@ -90,3 +90,7 @@
   .cart-footer{
     background-color: var(--serch-color);
   }
+
+  @media (max-width: 600px) and (max-height: 900px){
+    
+  }
