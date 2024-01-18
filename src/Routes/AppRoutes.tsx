@@ -12,7 +12,6 @@ import ProductDetailMen from '../Components/ProducDetails/ProductDetailsMen';
 import ProductDetailWoman from '../Components/ProducDetails/ProducDetailsWoman';
 import ProductDetailAccesories from '../Components/ProducDetails/ProductDetailsAccesories';
 
-
 const AppRoutes: React.FC = () => {
   return (
       <Routes>
