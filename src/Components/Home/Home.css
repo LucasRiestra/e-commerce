@@ -201,13 +201,13 @@ html {
     .Home-Title {
         font-size: 12vh;
         padding-top:2vh;
-        font-family: Impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
     
     .Home-Subtitle {
         font-size: 3vh;
         border: 0.1vh solid orange;
-        font-family: Impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
     
     .Buttons {
@@ -219,7 +219,7 @@ html {
         align-items: center;
         font-size: 2vh;
         margin-left: 18vh;
-        font-family: Impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
     .HomeMen-Page{
@@ -231,7 +231,7 @@ html {
         font-size: 5vh;
         padding-top: 1vh;
         margin-top: 5vh;
-        font-family: Impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
     .HomeWoman-Page{
@@ -251,7 +251,7 @@ html {
         margin-left: 1vh;
         margin-top: 1px;
         margin-bottom: 1px;
-        font-family: Impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
     .WomanSecondTitle{
@@ -260,19 +260,20 @@ html {
         margin-right: 1vh;
         margin-top: 1px;
         margin-bottom: 1px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
     .HomeAccesories-Page {
         height: 450px;
         width: 400 !important;
         padding-top: 1vh;
-        font-family: Impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
     .Accesories-Title {
         margin-top: 15vh;
         font-size: 4vh;
         padding-top: 1vh;
-        font-family: Impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 }
