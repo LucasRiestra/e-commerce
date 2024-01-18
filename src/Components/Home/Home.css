@@ -201,11 +201,13 @@ html {
     .Home-Title {
         font-size: 12vh;
         padding-top:2vh;
+        font-family: Impact;
     }
     
     .Home-Subtitle {
         font-size: 3vh;
         border: 0.1vh solid orange;
+        font-family: Impact;
     }
     
     .Buttons {
@@ -217,6 +219,7 @@ html {
         align-items: center;
         font-size: 2vh;
         margin-left: 18vh;
+        font-family: Impact;
     }
 
     .HomeMen-Page{
@@ -227,6 +230,7 @@ html {
     .Men-Title p {
         font-size: 5vh;
         padding-top: 1vh;
+        font-family: Impact;
     }
 
     .HomeWoman-Page{
@@ -246,6 +250,7 @@ html {
         margin-left: 1vh;
         margin-top: 1px;
         margin-bottom: 1px;
+        font-family: Impact;
     }
 
     .WomanSecondTitle{
@@ -260,11 +265,13 @@ html {
         height: 450px;
         width: 400 !important;
         padding-top: 1vh;
+        font-family: Impact;
     }
 
     .Accesories-Title {
         margin-top: 15vh;
         font-size: 4vh;
         padding-top: 1vh;
+        font-family: Impact;
     }
 }
