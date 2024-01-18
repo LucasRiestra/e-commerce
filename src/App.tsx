@@ -1,7 +1,7 @@
 import  { FC } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import AppRoutes from './Routes/AppRoutes';
-import './components/products/ProductsComponent.css';
+import './Components/products/ProductsComponent.css';
 import "./Components/Home/Home.css"
 import "./Components/About/About.css"
 import "./Components/Footer/Footer.css"
