@@ -201,13 +201,15 @@ html {
     .Home-Title {
         font-size: 12vh;
         padding-top:2vh;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
     }
     
     .Home-Subtitle {
         font-size: 3vh;
         border: 0.1vh solid orange;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
     }
     
     .Buttons {
@@ -218,8 +220,9 @@ html {
         text-align: center;
         align-items: center;
         font-size: 2vh;
-        margin-left: 18vh;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        margin-left: 22vh;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
     }
 
     .HomeMen-Page{
@@ -231,7 +234,8 @@ html {
         font-size: 5vh;
         padding-top: 1vh;
         margin-top: 5vh;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
     }
 
     .HomeWoman-Page{
@@ -242,7 +246,7 @@ html {
 
     .Woman-Title{
         gap: 2vh; 
-        padding-top: 5vh;
+        padding-top: 0.5vh;
     }
 
     .WomanFirtsTitle{
@@ -251,7 +255,8 @@ html {
         margin-left: 1vh;
         margin-top: 1px;
         margin-bottom: 1px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
     }
 
     .WomanSecondTitle{
@@ -260,7 +265,8 @@ html {
         margin-right: 1vh;
         margin-top: 1px;
         margin-bottom: 1px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
     }
 
     .HomeAccesories-Page {
@@ -274,6 +280,7 @@ html {
         margin-top: 15vh;
         font-size: 4vh;
         padding-top: 1vh;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
     }
 }

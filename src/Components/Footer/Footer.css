@@ -80,177 +80,47 @@ html {
     height: 2vh;
   }
 
-  @media (max-width: 600px) and (max-height: 845px) {
+  @media (max-width: 500px) and (max-height: 900px) {
     html {
       scroll-behavior: smooth;
       transition-timing-function: ease-in-out;
       transition-duration: 1.7s; 
     }
-    
-    footer.footer {
-        background-color: rgb(40, 40, 40);
-        z-index: 1;
-        width: 100%;
-        height: 13vh;
-      }
-      
-      div.footer-content {
-        display: grid;
-        grid-template-columns: 17% 40% 40%;
-        gap: 2vh;
-        padding: 0;
-        margin: 0;
-      }
-      
-      div.join-us {
-        display: flex;
-        align-items: center;
-        color: #dcdcdc;
-        font-family: Impact;
-        font-size: 3vh; 
-        font-weight: 400;
-      }
 
-      div.join-us p{
-        display: none;
-      }
-    
-      .join-us:hover{
-        color: white;
-      }
-      
-      div.terms-policy {
-        color: #dcdcdc;
-        font-family: Arial Hebrew;
-        font-size: 2vh;
-        font-weight: 700;
-      }
-    
-      .terms-policy:hover{
-        color: white;
-      }
-      
-      div.copyright {
-        color:  #cdcdcd;
-        font-family: Bodoni;
-        font-size: 2vh;
-        font-weight: 400;
-        text-transform: uppercase;
-        
-      }
-    
-      div.copyright p:hover{
-        color: white;
-      }
-    
-      .social-icons a {
-        align-items: left;
-        text-decoration: none;
-        color: inherit;
-      }
-      
-      .social-icons {
-        display: flex;
-        gap: 1px;
-      }
-      
-      .social-icons img {
-        width: 2vh; 
-        height: 2vh;
-        justify-content: left;
-      }
+    .footer-content{
+      display: block;
+      font-size: 4vh;
     }
 
-    @media (max-width: 600px) and (max-height: 900px){
-      html {
-        scroll-behavior: smooth;
-        transition-timing-function: ease-in-out;
-        transition-duration: 1.7s; 
-      }
-      
-      .footer {
-          background-color: rgb(40, 40, 40);
-          z-index: 1;
-          width: 100%;
-          height: 25vh;
-        }
-        
-        div.footer-content {
-          display: grid;
-          grid-template-columns: 1% 20% 50%;
-          width: 100%;
-          gap: 2vh;
-          justify-content: left;
-        
-        }
-        
-        div.join-us {
-          display: flex;
-          align-items: center;
-          color: #dcdcdc;
-          font-family: Impact;
-          font-size: 3vh; 
-          font-weight: 400;
-        }
-  
-        div.join-us p{
-          display: none;
-        }
-      
-        .join-us:hover{
-          color: white;
-        }
+    .terms-policy{
+      padding-left: 1vh;
+      font-size: 1.5vh;
+    }
 
-        div.social-icons{
-          margin: 0;
-          justify-content: flex-start;
-        }
-        
-        div.terms-policy p {
-          color: #dcdcdc;
-          font-family: Arial Hebrew;
-          font-size: 1.5vh;
-          font-weight: 700;
-          margin: 0;
-          align-items: left;
-          
-        }
-      
-        .terms-policy:hover{
-          color: white;
-        }
-        
-        div.copyright p{
-          color:  #cdcdcd;
-          font-family: Bodoni;
-          font-size: 1.2vh;
-          font-weight: 400;
-          text-transform: uppercase;
-          margin-left: 15.5vh;
-          
-        }
-      
-        div.copyright p:hover{
-          color: white;
-        }
-      
-        .social-icons a {
-          padding: 0;
-          align-items: left;
-          text-decoration: none;
-          color: inherit;
-          font-size: 2vh;
-          
-        }
-        
-        .social-icons {
-          display: flex;
-          gap: 1px;
-        }
-        
-        .social-icons img {
-          width: 2vh; 
-          height: 2vh;
-          justify-content: left;
-        }
+    .join-us{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 1vh;
+      font-size: 2vh;
+    }
+
+    .join-us p{
+      font-size: 2vh;
+    }
+
+    .social-icons{
+      margin-left: 8vh;
+      padding-left: 0.5vh;
+    }
+
+    .copyright{
+      margin-right: 0.5vh;
+      font-size: 1.5vh;
+    }
+
+    .social-icons svg {
+      width: 3vh; 
+      height: 3vh;
+    }
+
     }
