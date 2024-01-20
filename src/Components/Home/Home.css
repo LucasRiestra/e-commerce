@@ -214,8 +214,8 @@ html {
     
     .Buttons {
         display: flex;
-        width: 12vh;
-        height: 6vh;
+        width: 14vh;
+        height: 7vh;
         justify-content: center;
         text-align: center;
         align-items: center;
