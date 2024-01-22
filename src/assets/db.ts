@@ -280,7 +280,7 @@ export const MenProductsArray : MenProducts[] = [{
     quantity: 1
 }, {
     id: 31,
-    name: "Lacost blue Polo 1/5 M",
+    name: "Lacoste blue Polo 1/5 M",
     price: 15.00,
     image: "https://res.cloudinary.com/dtqgzojs3/image/upload/v1695137064/DSC07178-800x1067_h9uqib.jpg",
     category: "MenShop",
